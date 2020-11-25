@@ -7,13 +7,13 @@ ltr是一种新型的键盘布局,是根据的workman,programmer-dvorak得到的
 1. 复制99-ltr.hwdb到/etc/udev/hwdb.d
 2. $ sudo udevadm hwdb --update
 3. $ sudo udevadm trigger
-## 实现热键
+## 实现热键功能
 1. 确保已经安装好python3(python --version)
 2. 复制hotkey.py和hotkey.service到~/.config/systemd/user/下(如果没有这个文件夹需要创建)
 3. chmod +x hotkey.py
 4. systemctl --user enable hotkey.service
 5. systemctl --user start hotkey.service
-## 实现双拼
+## 实现双拼功能
 1. 确保安装fcitx5,[archwiki](https://wiki.archlinux.org/index.php/Fcitx5)有详细的教程
 2. $ sudo pacman -U libime-0.0.0.20201013-1-x86_64.pkg.tar.zst (这是archlinux的包管理器安装,可以改为自己用的包管理器)
 3. killall fcitx5 
