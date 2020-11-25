@@ -1,0 +1,11 @@
+[Unit]
+Description=hotkey 
+Documentation=hotkey
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/sudo /usr/bin/python3 /home/oizehsgl/.oizehsgl/e/archlinux/script/hotkey.py
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
